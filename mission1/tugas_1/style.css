@@ -1,0 +1,99 @@
+.grid-item1 {
+    grid-area: birutua;
+    background-color: #62b7fd;
+    border: 1px solid black
+}
+.grid-item2 {
+    grid-area: kuning;
+    background-color: #fbff00;
+    border: 1px solid black
+}
+.grid-item3 {
+    grid-area: merah;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid black
+}
+.grid-item4 {
+    grid-area: hijau;
+    background-color: #51ff00;
+    border: 1px solid black
+}
+.grid-item5 {
+    grid-area: hitam;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid black
+}
+.grid-item6 {
+    grid-area: coklat;
+    background-color: #9b6500;
+    color: #ffffff;
+    border: 1px solid black
+}
+.grid-item7 {
+    grid-area: ungu;
+    background-color: #8d01ff;
+    color: #ffffff;
+    border: 1px solid black
+}
+.grid-item8 {
+    grid-area: oren;
+    background-color: #ff7b00;
+    border: 1px solid black
+}
+.grid-item9 {
+    grid-area: putih;
+    background-color: #ffffff;
+    border: 1px solid black
+}
+.grid-item10 {
+    grid-area: merahmuda;
+    background-color: #ffa4c7;
+    border: 1px solid black
+}
+.grid-item11 {
+    grid-area: biru;
+    background-color: #5afdfd;
+    border: 1px solid black
+}
+.grid-item12 {
+    grid-area: abu;
+    background-color: #c1c2c4;
+    border: 1px solid black
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'birutua birutua hitam hitam hitam hitam'
+    'birutua birutua coklat coklat putih merahmuda'
+    'birutua birutua coklat coklat putih biru'
+    'kuning kuning ungu ungu putih biru'
+    'merah merah ungu ungu abu abu'
+    'hijau hijau oren oren abu abu';
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 500px; /* Tambahkan batasan lebar maksimal */
+    margin: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.grid-container>div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
