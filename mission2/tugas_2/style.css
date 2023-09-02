@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Allan', Courier, monospace;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Dekko', Courier, monospace;
+}
+
+#board {
+    background-image: url('/img/background.jpg');
+    background-size: 100%;
+    border: 1px solid black;   
+}
