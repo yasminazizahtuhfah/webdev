@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.side-left {
+    color: rgb(3, 3, 3);
+    text-align: left;
+    padding: 2rem;
+}
+
+.side-right {
+    background-color: #f5f3f3;
+    text-align: left;
+    padding: 2rem;
+}
+
+.side-left h1,
+.side-right h1 {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr; 
+    grid-gap: 3rem; 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    margin: 0;
+}
+
+.product-title {
+    margin: 0;
+    font-size: 1rem; 
+    text-align: left;
+}
+
+.product-price {
+    font-size: 1rem;
+    text-align: left; 
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 3px;
+}
+
+.control-button {
+    font-size: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:dodgerblue;
+}
+
+.control-button:hover {
+    background-color: #18c218;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.quantity-input {
+    font-size: 1.2rem;
+    padding: 0.02rem 0.3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 4rem;
+    text-align: center;
+    margin: 0 0.2rem;
+}
+
+.add-product {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.add-product:hover {
+    background-color: #45a049;
+}
+
+/* CSS untuk cart items */
+.cart-items {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.cart-items h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items li {
+    margin-bottom: 0.5rem;
+}
+
+/* CSS untuk cart total */
+.cart-total {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.cart-total h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart-total p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.cart-total .total-amount {
+    color: #e74c3c; /* Warna teks untuk total harga belanja */
+}
+
